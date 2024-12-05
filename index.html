@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Dropdowns</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h2>Dynamic Dropdown</h2>
+      <form>
+        <label for="category">Category</label>
+        <select id="category" name="category" onchange="updateOptions()">
+          <option value="">--Select a Category--</option>
+          <option value="physics">Physics</option>
+          <option value="electronics">Electronics</option>
+          <option value="biology">Biology</option>
+        </select>
+
+        <label for="options">Options:</label>
+        <select id="options" name="options" disabled>
+          <option value="">--Select an Option--</option>
+        </select>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
